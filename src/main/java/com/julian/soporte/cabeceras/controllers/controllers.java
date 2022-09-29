@@ -39,7 +39,10 @@ public class controllers extends HttpServlet {
             out.println("	</head>");
             out.println("	<body>");
             out.println("		<h1>Listado de Productos!!</h1>");
-            out.println("       <a href=\"/cabeceras-peticiones/productos.xls\">Descargar Excel</a>");
+            out.println("       <a href=\"" + request.getContextPath() + "/productos.xls\">Descargar Excel</a>");
+            out.println("       </br>");
+            out.println("       <a href=\"" + request.getContextPath() + "/productos.json\">Ver productos en Json</a>");
+
         }
 
         out.println("       <table>");
